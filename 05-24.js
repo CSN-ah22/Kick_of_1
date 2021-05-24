@@ -114,3 +114,12 @@ if(acc[curr]){ //acc에 a라는 글자가 있다면// acc['a']  또는 acc.a 와
 return acc;
 }, {});
 console.log(counts);
+
+
+//매개변수로 넘어온 배열에서 10보다 큰 것이 몇 개인지를 리턴하는 함수 만들기
+function countBiggerThanTen(numbers5){
+
+}
+
+const count = countBiggerThanTen([1,2,3,5,10,20,30,40,50,60])
+console.log(count);
