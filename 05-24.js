@@ -118,8 +118,14 @@ console.log(counts);
 
 //매개변수로 넘어온 배열에서 10보다 큰 것이 몇 개인지를 리턴하는 함수 만들기
 function countBiggerThanTen(numbers5){
-
+ return numbers5.reduce((acc1, curr1)=>{
+     if(curr1 > 10){
+         return acc1+1; //acc - > 10보다 큰 개 몇개인지 개수
+     }else{
+         return acc1;
+     }
+ }, 0);
 }
 
-const count = countBiggerThanTen([1,2,3,5,10,20,30,40,50,60])
-console.log(count);
+const count5 = countBiggerThanTen([1,2,3,5,10,20,30,40,50,60]);
+console.log(count5);
